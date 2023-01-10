@@ -9,6 +9,8 @@ class Jatek extends Model
 {
     use HasFactory;
 
+    protected $primaryKey = 'jatek_id';
+
     protected $fillable = [
         'neve',
         'platform',

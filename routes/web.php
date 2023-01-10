@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\JatekController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/api/jatekok', [JatekController::class, 'index']);
+Route::get('/api/jatekok/{id}', [JatekController::class, 'show']);
+Route::delete('/api/jatekok/', [JatekController::class, 'destroy']);
+Route::post('/api/jatekok/', [JatekController::class, 'store']);
+Route::put('/api/jatekok/{id}', [JatekController::class, 'update']);
