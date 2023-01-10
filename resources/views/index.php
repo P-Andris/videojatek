@@ -15,6 +15,7 @@
 <body>
     <main>
         <header><h1>Főoldal</h1></header>
+        <article></article>
     </main>
 </body>
 </html>
