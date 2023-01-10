@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Jatek extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'neve',
+        'platform',
+        'darabszam',
+        'ar'
+    ];
 }
